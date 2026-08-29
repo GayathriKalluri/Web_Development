@@ -1,0 +1,27 @@
+.main{
+    display: flex;
+    background-color: aqua;
+    width: 500px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 10px auto;
+    border-bottom:5px solid blue;
+    text-align:center;
+    border-radius: 20px;
+    
+}
+
+.image{
+    width: 200px;
+    margin: 10px;
+}
+
+.content{
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-shadow: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
