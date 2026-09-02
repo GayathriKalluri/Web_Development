@@ -1,0 +1,17 @@
+1)embeed the happy monkey font using google fonts. how to embeed? go to google then type for the font you require then get the code the paste the link tags in our main file and css code in the css file
+2) to make image round add the border radius in css with value of 50%
+3)group css selector-> select the multiple selectors in one line if they all have same property and we can seperate them using comma
+4)we have a problem that flexbox can fix-> 
+if we want to display the content inline then we use inline which displays in the same line or else if we want to display like flex then we use flex which again have many property 
+flex-direction to be specified either row or column
+then we have align-items(start,center,end) again justify-content(start,center,end,space-around,space-between,space-evenly)
+one important thing is divs are displayed on the top of each other where as flex is by default displayed in side by side(stack up on a horizontal axis)
+if flex-direction is by default row the justify-content handles the x-axis where as align-items handles the y-axis
+where as if flex-direction is column this happens vice versa i.e justify-content handles y-axis and align-items handles x-axis
+if align-items are not used in flex-direction row then our items stretches the entire box i.e align-items by default have the value as stretch
+justify-content and align items properties only work inside the flex box
+so we need to hover over the image and another image to be appeared for this we need to render the image from the css using background-image property and we need to use container div for this
+one thing we need to remember here is text-align center only works for texts but not images and display inline also will not work for images, do inorder to center the image we need to use margin property
+make elements change on the hover, hover pseudo class
+we use a:hover as selector and we can make use of properties 
+add background gradient:- background: linear-gradient(red,blue); -> i.e on thw top we get red and bottom half we get blue 

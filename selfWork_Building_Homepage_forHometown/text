@@ -1,0 +1,1 @@
+1)issue faced-> when i insert the image in background and given width as 100% and height as 200px then image it self is repeating in the background for this one important thing i need to use is background-size:cover

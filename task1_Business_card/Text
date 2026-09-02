@@ -1,38 +1,67 @@
 !DOCTYPE html tag : this is just used for version control to tell this is html 5
+
 html tag : -> all other html tags are enclosed in this html tag
+
 head tag : -> head tag is used to represent the metadata of webpage
+
 body tag : -> everything that displays in a webpage is written inside this tag
-html:
+
+HTML:
 heading tags -> h1 is highest till h6 is lowest
+
 para tag -> p this is for content
+
 button tag -> this is for buttons only in html and css it does nothing but with js we can add some onclick functionality
+
 input tag -> self closing tag, and here we have to specify the type of input ex:- file for choose file/upload file , email, text, password, date, time
+
 anchor tag -> so this anchor tag is link the text to another page so here we have to give the link of another page inside href attribute
+
 img tag -> self closing tag, here we have to give link of image/path of image -> link is directly given from any browser, whereas for path the file should be in the same folder as index.html file
 for image we can give width as 100% i.e size of screen or in pixels px
 -> we have another important thing to display the image, if we want multiple images to be displayed side by side we need to use dispaly:inline property other wise display:block it is displays vertically
+
 ->we have nested tag i.e div -> this acts as a container
+
 -> we also have lists -> ordered list, unordered lists <ul><li></li></ul> can be represented like this
+
 -> alt attribute: this is the alternate attribute added in the image tag for alternate text alt="description" why we write? if our image is not rendered properly then we can use this, make sites accesible, helps your site rank higher on google
 don't include image of, be concise less than 25 characters, describe it "over the phone" best for screen readers
-css:
+
+CSS:
 here we have selector, property, value
 we can use tag name directly as selector or we can give class name in the html the use the classname with dot in css
 basic properties -> background color, font-size, font-weight, text-align:center
+
 box-model -> margin, border, padding, content -> we have margin, margin-top, margin-bottom, margin-left, margin-right similarly for padding
 if we set margin-left: auto and margin-right:auto then it will center the content
 (imp) we also have  collapsing margins
+
 -> in border we have border-radius -> lrtb , border can have size, type, color all can be given side by side
 if border is not needed we can keep it as none
+
 ->(imp) flex box -> wrapping in a container and we have to give the property as display flex and in order to center we have justify-content:center,start,end, space-around, space-between
+
 ->relative path ./  start from the same directory the current file is in
 ../ start from the parent directory of(the directory "above") the current file
 / -> strat from the projects root directory
+
 utility class -> using same class name in different tags 
+
 css inheritance -> why learn inheritance? 1-> write dryer code 2->fewer bugs, 3-> be more efficient
 instead of repeating same code multiple times we use inheritance for better readability, here we use article tag so in css we can use this article and write the repeating code we can also write for body but it is best to use article tag
+
 web safe fonts -> fonts are really very important, so if i talk about client and server architecture , there client requests for www.google.com then server has to respond with some font 
 so the receipe of font should be web safe i.e the client has only web safe fonts available if we give some other fonts we may get error
 we have fant-family property which uses values such as name of font, 
+
 margin and pading shorthand -> so if we margin top-right-bottom-left values as same then we can use just margin and if we have all different then we have to use like this margin: toppx rightpx bottompx leftpx
-again if top and bottom values are same and right and left values are same then we use margin:top/bottompx right/leftpx ex: margin: 10px 20px ->10px represents for top and bottom 
+again if top and bottom values are same and right and left values are same then we use margin:top/bottompx right/leftpx ex: margin: 10px 20px ->10px represents for top and bottom
+
+if we want to deploy this we deploy in netlify via github i.e we upload the code to github then to the netlify
+difference between git and github 
+git is a version control system that runs locally in the machine, and also helps keeps a history of changes youve made to your projects
+github is a online platform that stores git respositories, runs online in the cloud, helps share your code (and the history of changes) with others.
+what is version control -> creates "save points" (called commits) in your code that you can revert back to if needed and also manages changes made by others by "merging" multiple different versions of the same codebase
+and generally allows you to be less worried about making mistakes or having your code conflict with other people working on the same project
+what is actually github? -> a cloud based saas producy, not owned by microsoft , used for sharing your code with others, assumes the usage of the git version control system, has many git-based capabilities built into it(commiting,merging,branching)

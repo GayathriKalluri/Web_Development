@@ -1,0 +1,15 @@
+Here we are going to learn about background-image property we need url("imageURL") and background-size property with value cover then it will cover the entire page, webp format for images
+so important part is buttons will not inherit font-family if we apply to body instead we need to include font-family:inherit in the btn selector
+we need to use this also background-size: cover; to cover the entire page
+font-face in css:- in some google fonts are not enough but we need some other godfather style fonts then we need to find it in the internet for this we have one website 1001fonts.com is one of them then we need to download receipe of the font in the ttf format of fonts then use @font-face selector in css and src=url("filename.ttf"); drag and drop the file into the current directory
+Aside: spans:- <span> tag, spans are not visible unless we give any styling, spans are inline take only space they need and divs are displayed block based these take block space
+add and underline using a span:- if we set single css property to a class then it is called utility class
+
+use and id for the logo:- why id when we have class? we need to use # in css for id, so we need to use id if we know that the element is unique and only used once, class is something we can reuse but id should be unique and we cannot resue, anyways styling is applied but wrong way to use in html
+
+rendering spacex logo:- use image tag then use id for it and make style as we wish
+ webp is the image format as gifs
+add terms and condition section:- if margin is not needed then add margin as 0
+Aside: text shadow- > best if background dominate the text ->so css property is text-shadow and have 4 values x offset y offset blur and color, if we want to make text stand out when the backgroun image and text color are same them make use of this shadow, blur concept to make the webpage standout
+improving the readability with text shadow:-use text-shadow property in css 
+Html lang attribute:- setting document language using html tag i.e it sets the language of the content in an HTML page to ensure consistency , in html tag only we use lang="en" and these codes are standardized
