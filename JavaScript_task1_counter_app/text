@@ -1,0 +1,18 @@
+inside body create script tag and write the necessary content that we need or we can create seperate script file and link this script file inside body
+write your first javascript:- creting variables
+let count=0 let is datatype and count is a variable
+onclick is the listen attribute in html and inside write the function we want to trigger when the button is clicked
+dom document object model -> how you use javascript to modify a website
+document.getElementById("count-ele") if we use only this and assign it to some variable and log that variable then we get <h2 id="count-ele">this as our output without .innerhtml
+in dom document specifies the html document
+let counter=4
+function increment()
+{
+    counter+=2
+    console.log("clicked") //this will log in console in edge or chrome-> 3dots->more tools->developer tools->console
+    document.getElementById("count-ele").innerHTML=counter//passing the argument
+}
+function save()
+{
+    console.log(counter)//when we click save button then counter value will be displayed in the console
+}

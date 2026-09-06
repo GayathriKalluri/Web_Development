@@ -1,1 +1,4 @@
 1)issue faced-> when i insert the image in background and given width as 100% and height as 200px then image it self is repeating in the background for this one important thing i need to use is background-size:cover
+for every thing if we want to increase or decrease the width or height of that container use this height and width properties
+for images also use the height and width properties
+for flex box text-align center will not work we have special features for it

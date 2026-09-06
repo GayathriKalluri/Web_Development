@@ -1,0 +1,24 @@
+Another way to write 
+let sumEl=document.getElementById("sum-el")
+//another way of document.getElementById is
+//same as document.getElementById
+if in html we gave id to p tag then we use #
+let sumEl=document.querySelector("#sum-el") //here we need to give hash in the front
+query -> question
+selector -> refers to css selector
+if in html we gave class to para tag then we give . in the query selector
+ex:- let sumEl=document.querySelector(".sum-el")
+//queryselector is very important
+
+Arrays
+objects
+boolean
+if else statement
+comparision operators
+logical operators
+for loops
+the math objects random and floor
+return statements
+
+in arrays we have push and pop function which add and remove at the end
+but we also have one special thing here which is shift and unshift functions which delete and add at the front
