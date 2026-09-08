@@ -1,0 +1,46 @@
+Here I came across I situation that is i want input tag
+and with full width so whats happening is box end towards right is not appearing border towards right is not appearing that is the issue
+so for this we have the special property call box-sizing Here
+box-sizing: border-box;
+
+so instead of writing onclick in html we can use addEventListner in js for better readability
+
+let vs const variables
+so if we set something to const that cannot be reassigned again
+ex:- if let inputEl="Hi!!"
+we can again reassign it to inputEl="Hello"
+
+so if we set that to const inputEl="hii" we cannot again reassign it to hello again
+so why we need this?
+when to use let and when to use const
+
+template strings:
+it makes easier to parse for humans 
+in javascript only we can write similar html code
+
+const email=`
+    Hey ${recipient}! 
+    How is it going? 
+    cheers 
+    ${sender}
+` so if we write like this our output also will be in multiple lines
+we can also style this listitems in css
+
+Number() function is a built-in js function that converts strings into numbers
+
+li a{
+    color:#5f9341
+} only the target anchor in list items will get this coloring 
+remaining all anchor tags get the default coloring
+
+once if we create all index.html,style.css,script.js then we have to create manifest.json so that we 
+can add the chrome extension in chrome
+type chrome://extensions in chrome -> developer mode -> click load unpacked -> add the project that we created
+boom chrome extension is added and we can use the project anywhere we want
+
+but here the problem is when we refresh everything will be gone so for the data to be stored 
+we need local strorage concept
+
+now go to any page in chrome -> inspect -> application -> storage -> local storage -> we will have the past history
+so we can clear this using localStorage.clear() in the console and add what ever we wish then we will get all the history so here we will have key and value pairs
+so we have save this using js using localstorage in js
