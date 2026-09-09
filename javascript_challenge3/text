@@ -1,0 +1,20 @@
+points to remember
+->how to render something into dom 
+we can use .innerHTML
+and for text we can use .textContent
+
+how to increase dom performance
+
+    for(let i=0;i<img.length;i++)
+    {
+        con.innerHTML+=`<img alt="Employee in the company" class="team-img" src="${img[i]}">`
+    }
+    this manipulates dom multiple times 
+    
+    instead we can add it to an empty string and then we can just add at the end to increase performance and not always modifying dom is right 
+    let imgsDOM=""
+    for(let i=0;i<img.length;i++)
+    {
+        imgsDOM+=`<img alt="Employee in the company" class="team-img" src="${img[i]}">`
+    }
+    con.innerHTML=imgsDOM

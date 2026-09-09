@@ -44,3 +44,54 @@ we need local strorage concept
 now go to any page in chrome -> inspect -> application -> storage -> local storage -> we will have the past history
 so we can clear this using localStorage.clear() in the console and add what ever we wish then we will get all the history so here we will have key and value pairs
 so we have save this using js using localstorage in js
+
+so our local storage can only understand strings for that to understand arrays we can use
+JSON.stringify(),JSON.parse()
+
+JSON.stringify()
+        ↓
+JavaScript → JSON string
+
+JSON.parse()
+        ↓
+JSON string → JavaScript
+
+Local Storage is used to save data in the browser so it can remain after refreshing the page.
+Local Storage stores values as strings
+
+Why use JSON.stringify()?
+
+To convert an array/object into a string so it can be stored in Local Storage.
+
+Why use JSON.parse()?
+
+To convert the stored JSON string back into a JavaScript array/object.
+
+truthy and false values
+falsy value -> false, 0, "", null, undefined, Nan
+null-> how you as a developer signalize emptiness
+undefined->how javascript signalizes emptiness
+
+arguments vs parameters
+values when we pass when we call function is arguments
+parameters are inside of the function 
+arguments outside of the function
+
+grabbing the url of current tab
+chrome.tabs.query({active:true,currentWindow:true},function(tabs){
+    var activeTab=tabs[0];
+    var activeTabId=activeTab.id;
+});
+
+what we learnt here in chrome extensions
+const instead of let as we not going to reassign it
+working with dom using below functions
+addEventListner() so instead of onclick in html we controlled everything in js
+innerHTML instead of textContent when we want to render out list items or similar kind
+input.value fetched out the value that user entered
+function parameters -> for function reusability
+template strings -> much better and easiers for humans to parse ${}
+saved things in localStorage -> exposer to database actually
+JSON object -> json.stringify , json.parse 
+manifest.json -> we need to configure our app here
+objects in arrays

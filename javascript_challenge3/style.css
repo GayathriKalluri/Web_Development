@@ -1,0 +1,38 @@
+body{
+    text-align:center;
+    margin:10px;
+    color:black;
+    font-weight:bold;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:start;
+    
+}
+.team-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin:10px;
+}
+#convert-btn{
+    margin-top:10px;
+}
+
+.conversion-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.conversion-box h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+.conversion-box p {
+    color: #666;
+    font-size: 16px;
+}
