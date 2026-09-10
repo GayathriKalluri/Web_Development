@@ -1,0 +1,82 @@
+Here we will look into
+the command line -> use linux commands to control your computer via the terminal
+the git and github -> essential collaboration techniques like branching,PR's and merging
+
+intro to command line basics and demystifying the command line
+what is command line 
+a user interface - also called "command line interface" or cli -
+that allows us to utilise the functions of our operating systems
+
+works by means of typing commands instead of by clicking icons as we do in a GUI
+
+but why to type commands when we have nice gui?
+1) file management -> cli is faster than gui
+2) control development environment
+3) automate repetitive tasks example add dot at end of everyfile name of 10000 files
+so for this we can jst execute one command and boom dot is added
+if we use gui we have to go to each and every file and modify
+
+we wiil be studying:
+the file tree
+create & delete
+write and read
+copy, move, rename
+search & replace
+count & organize
+
+pwd(print working directory) -> gives us the root directory of our current project
+ls(list) -> lists the content what our present working directory has
+cd(change directory) -> to navigate to other folders or files to check the content in it
+take us to whatever we tell it to
+
+clear -> clears the entire terminal
+
+rules of navigation of the file tree:
+.. to go to upper level
+../.. two levels up
+
+create and delete files from project
+commands:
+create: touch mountains.txt
+delete rm mountains.txt
+
+tips and tricks: 
+defaults to current working directory
+use paths to create & delete elsewhere
+touch ../cities/biggest_cities.txt
+
+create and delete directories
+commands:
+create: mkdir cities
+delete: rmdir cities (use this if directory isempty)
+-> rm -r cities(use this if directory is not empty)
+
+write and read files
+write to files:
+command: echo 'Hello, world!' //wrap the string in single quotes
+prints "Hello, world!" to the terminal
+
+redirect output:writing this into file rather than terminal
+command: echo 'Hello, world!'>hello.txt
+
+create file: echo 'Hello, world!'>hello.txt
+if hello.txt doesnot exists echo will create the new file while writting
+
+overwrite or append
+the redirection operator '>' overwrites the existing content
+redirect and overwrite: echo 'hello, world!'>hello.txt
+.prints "Hello world" to the file hello.txt
+overwrites existing content
+
+to append and not overwrite use the append redirection operator '>>'
+appends new string to existing content
+
+read from the files:
+command: cat hello.txt (connection between cancatinating and reading)
+prints "Hello, world!" to the terminal
+redirect output: cat hello.txt>hello_copy.txt
+prints "Hello, world!" to the file hello_copy.txt
+create file: cat hello.txt>hello_copy.txt
+if hello_copy.txt does not already exist, 'cat' will create the file
+
+
