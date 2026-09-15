@@ -1,0 +1,19 @@
+what we will be studying here
+the ternary operator
+the switch statement
+object destructuring
+setTimeout
+setInteval
+event loop
+scope
+hoisting
+import/export
+the date converter
+the error constructor
+pre-increment
+bigint
+numeric seperators
+
+ternary operator: an alternative for if/else
+condition:should return a truthy or falsy value
+condition?expression:expression

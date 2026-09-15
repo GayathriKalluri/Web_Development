@@ -1,0 +1,42 @@
+main branch
+features Branch -> it is under main branch and adds up some feature for our project
+
+pull requests and merging
+
+create an issue
+
+
+
+git status
+git add .
+git commit -m ""
+git push origin
+create a branch : git branch javascript-practice
+Switch to the new branch: git switch javascript-practice
+Create + switch in one command: git switch -c javascript-practice
+Push the new branch to GitHub:git push -u origin javascript-practice
+
+pull requests: write a short description of the change you made and the reason for the change
+then we have to merge the pull requests
+once we merged then we can delete the branch as it is no longer needed
+
+merge conflict:
+Trying to merge two branches with conflicting change
+the above is all about pushing to github
+
+pulling form remote repo to local repo:
+git pull
+
+ssh and gpg keys in githubs
+uses public key cryptography
+
+public/private keys:
+a method for securely passing data from one place to another
+provides a very high level of confidence that the data is coming from the place it claims to be coming from
+
+SSH Key — for connecting to GitHub
+An SSH key lets your computer authenticate with GitHub without entering your GitHub password/token every time.
+git push, git pull, git clone authentication
+
+GPG Key — for signing commits
+A GPG key is mainly used to prove that a commit was genuinely created/signed by you.
