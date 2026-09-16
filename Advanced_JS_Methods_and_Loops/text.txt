@@ -1,0 +1,40 @@
+we will be studying
+
+for...of
+for...in
+forEach()
+includes()
+map()
+join()
+filter()
+reduce()
+break and continue
+every(), some(), find(), at()
+String.replace()
+String.replaceAll()
+
+for...in loop vs for...of
+they both iterate over object data strutures
+arrays are objects too
+
+for...in -> iterates over all enumerable property keys of an object
+for...of -> iterates over the values of an iterable objects(exmaples of iterable objects includes arrays and strings)
+forEach() -> iterating over arrays
+.includes -> A method for checking if an array holds a given value
+.map() 
+.join() -> creating string from arrays
+concatenates elements of array into a string
+you choose how elements are seperated
+returns the new string
+
+foreach vs map
+when to use which
+use .map() if you need to make use of the new array it returns
+use .forEach() if you don't need to create a new array
+.filter() -> getting only the elements we want form an array
+.reduce() -> give me just one thing
+
+regex(regular expression) is a sequence of characters that specifies a match pattern in text
+It can look complicated 
+for example /[a-zA-Z1-9]/ matches letters a-z in lower and uppercase, and numbers 1-9 Or /^\d{5}(-\d{4})?$/ validates US zip codes
+most devs don't write it but instead they google it or ask AI

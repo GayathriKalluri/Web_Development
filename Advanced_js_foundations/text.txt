@@ -2,8 +2,8 @@ what we will be studying here
 the ternary operator
 the switch statement
 object destructuring
-setTimeout
-setInteval
+setTimeout asynchrous method
+setInteval asynchrous method
 event loop
 scope
 hoisting
@@ -17,3 +17,65 @@ numeric seperators
 ternary operator: an alternative for if/else
 condition:should return a truthy or falsy value
 condition?expression:expression
+
+javascript is a single-threaded non-blocking language
+
+javascript runtime environment(eg. v8 engine)
+the heap -> the heap handles memory allocation so we don't have to
+the call stack -> as javascript is single threaded, the call stack can only execute one piece of code at a time in its singel thread
+javascript gets a helping hand -> webApi's, task queue, event loop, these are not part of javascript
+javascript is singel threaded(but can still multitask) -> .setTimeout(), .setInteval, fetching data across the network, promises
+
+what are webapis -> provided by the browser, not part of javascript, have functionality for -> dom manipulation, data requests, timers(settimeout, setinterval)
+
+so what actually happens in event loop?
+we have the following format
+1) console.log()
+2) function(){
+    console.log()
+    settimeout()
+}
+3) console.log()
+then what happens here is 1 goes to call stack executes and placed in output
+2 goes to call stack as there is settimeout it goes to webapi and starts timer for 5secs 
+then goes task queue to executes meanwhile before these 5secs completes 3 goes to call stack and placed in output 
+now 2 goes to call stack and  places in output
+
+so if we have something like this then what happens?
+1) console.log()
+2) function(){
+    console.log()
+    settimeout()
+}
+3) mineBitcoin() returns somebinary number
+then what happens here is 1 goes to call stack executes and placed in output
+2 goes to call stack as there is settimeout it goes to webapi and starts timer for 5secs 
+then goes task queue to executes meanwhile before these 5secs completes 3 goes to call stack and minebitcoin will executes placed in output till then task queue must wait
+now 2 goes from task queue to call stack and  places in output
+
+finally we have call stack, webapis, taskqueue, console
+
+intro to constructors
+
+two types of constructors:
+1)inbuilt -> provide objects in various predetermined foramts, like date objects and error objects, and objects for each data type.
+2)custom -> constructors we design ourselves to produce objects for our own specific purposes.
+
+inbuilt constructors: 
+date constructor, error constructor
+common constructors:
+String()
+Number()
+Array()
+Object()
+Boolean()
+
+preincrement -> the preincrement operator increments the varibles value before the result of the
+increment is used in an expression
+
+predecrement
+
+numeric seperators(_) & bigint
+bigInt-> is useful in contexts requiring precise handline of large integers, such as cryptography, or when interacting with databases that use large integer identifiers
+
+hoisting: varible and function declarations are moved to the top of their containing scope during the compilation phase, before code execution
