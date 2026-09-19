@@ -1,0 +1,22 @@
+here are we going to learn
+function expressions
+arrow functions
+default params
+the rest parameters
+
+arrow function -> ultra consise functions
+
+know when to map and foreach
+map is to return something into webpage
+
+
+callback functions
+//javascript functions are "first class citizens"
+functions can be assigned to variables 
+we have seen that with function expressions
+functions can be passed as argumnets to other functions
+
+arrays methods:map,foreach,reduce
+settimeout and setinterval
+event listeners
+

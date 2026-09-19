@@ -1,0 +1,143 @@
+we will be studying
+
+how openAi model works
+setting up a request
+tokens
+tools
+the "few shot" approach
+temperature
+the "stop sequence"
+frequency and presence penalities
+
+how openAi api works
+each request to the api:
+a model
+array of messages
+other optional settings
+a llm is an algorithm that uses training data to recognize patterns and make predictions or decisions
+(gpt-4)gpt 3.5 turbo
+
+messages array:- 
+instructions to the system -> send to openai ->we get assistant object contains answers
+user input by users 
+
+openAi Api dependency openai @ 4.14.2
+npm install for openAi
+
+a quick word about model:
+snapshots
+context length: gpt-4-32k 32k is how many tokens a model can handle
+knowledge cutoff date : training data date 
+memory: models can't remember what we told before or what they told us before
+we have memory solutions
+
+prompt engineering:
+prompt engineering is the art or science of designing inputs for generative AI tools like gpt-4 to produce optimal outputs
+
+tokens:
+what are tokens in OpenAI?
+why do tokens matter?
+tokens cost credit
+tokens need processing
+keeping tokens low saves time and money
+
+the max_tokens settings:
+max_tokens limits the  number of tokens the model output
+this does not effect the size of your input
+max_tokens does not allow us to control how concise a text is
+if you set max_tokens, be sure to allow enough tokens for a full response
+to control text length, good prompt design is essential
+
+in simple tokens are the number of words
+
+
+few more ways to get best output:
+temperature settings:
+when you get over how good AI is, you start to recognise how bad it is
+why does temperature do?
+controls how daring output is
+can be set from 0 to 2
+dafaults to 1
+lower temperature=less daring
+higher temperature=more daring
+
+lower temperature:
+safer, more predictable
+good for factual outputs
+
+higher temperature:
+more dangerous, less predictable
+good for creative output 
+process times are long and results are frustating
+
+
+zero short approach:
+not give a model an kind of examples
+the few short approach:
+here we give examples and model is trained even more better
+
+pros of few short
+more control over style of output
+cons of few shot
+more expensive because of tokens
+so all of tokens are to be processed and response time will be a bit slower
+
+few things that we need to avoid -> 
+stop sequence -> we don't use it daily
+reasons a model stops producing:
+finished what it wanted to do
+ran out of tokens
+encounter a stop sequence
+
+the stop sequence:
+an array with upto 4 stop sequences
+the model stops generating when it tries to produce a stop sequence
+the outputted text will not include a stop sequence
+
+presence and frequency penality:
+
+presence_penalty:
+numbers from -2 to 2
+defaults to 0
+higher numbers increases a models likelihood of talking about new topics
+
+frequency_penalty: this will reduce the repeating words
+numbers from -2 to 2
+defaults to 0
+higher numbers it decreases a models likelihood of repeating the exact same phrase
+
+fine-tuning:
+giving the standard pre trained model a specific data set to enhance its performance on a particular task
+what are the use-cases?
+tone and style -> teach the model how you want it to respond
+format -> such as json data
+function calling -> can be improved by fine-tuning
+financial motivations -> reducing few-shot prompt-sizes, downgrading the model
+
+fine-tuning is a last resort:
+work on prompt-design
+adjust settings e.g. temperature
+use few-shot approach
+fine-tune
+
+fine-tuning needs plenty of data:
+atleast 50 items (more is better - within reason)
+human-checked
+JSONL format
+openai specify what the data needs to include
+
+what we have to do for fine tuning
+upload training data
+use file ID to create job
+check status of job
+test our fine-tined model
+
+assessing your output is subjective!
+you need an effective testing strategy
+the quality and amount of data is key
+this is about detail, not huge changes
+
+creating images with the DALL.E 3 API
+generating images
+we need to give model, prompt, n ,size, style, response_format
+
